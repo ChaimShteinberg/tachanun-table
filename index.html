@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ימים שאין אומרים בהם תחנון</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">ימים שאין אומרים בהם תחנון</div>
+
+      <div class="search-section">
+        <div class="search-container">
+          <label for="search-day">יום:</label>
+          <input
+            type="text"
+            id="search-day"
+            class="search-input"
+            placeholder="א, ב, ג..."
+          />
+
+          <label for="search-month">חודש:</label>
+          <input
+            type="text"
+            id="search-month"
+            class="search-input"
+            placeholder="תשרי, חשון..."
+          />
+
+          <button class="search-button" onclick="searchTable()">חפש</button>
+          <button class="clear-button" onclick="clearSearch()">נקה</button>
+        </div>
+      </div>
+
+      <div class="result-section" id="results">
+        <div class="no-result">הזן יום וחודש לחיפוש</div>
+      </div>
+
+      <div class="content">
+        <table class="data-table" id="main-table">
+          <thead>
+            <tr>
+              <th>יום</th>
+              <th>תשרי</th>
+              <th>חשון</th>
+              <th>כסליו</th>
+              <th>טבת</th>
+              <th>שבט</th>
+              <th>אדר</th>
+              <th>אדר א</th>
+              <th>אדר ב</th>
+              <th>ניסן</th>
+              <th>אייר</th>
+              <th>סיון</th>
+              <th>תמוז</th>
+              <th>אב</th>
+              <th>אלול</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- הטבלה תיבנה ב-JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
